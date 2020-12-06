@@ -41,7 +41,7 @@ export const carSlice = createSlice({
   }],
   
   reducers: {
-    addCar: (state, payload) => {state.push(payload);},
+    addCar: (state, {payload}) => {state.push(payload);},
     removeCar: (state, {payload}) => state.filter ( car => car.id !== payload),
   },
 });
