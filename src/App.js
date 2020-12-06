@@ -2,12 +2,10 @@ import React, {useState} from 'react';
 import './App.css';
 import { Grid,Button } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
-import {useDispatch, useSelector} from 'react-redux';
 import Table from './components/Table'
 import AddCarModal from './components/AddCarModal';
+
 function App() {
-  const dispatch = useDispatch();
-  const cars = useSelector(state => state);
   const [showModal, setShowModal] = useState(false);
   
   const handleAddCar = () => {
